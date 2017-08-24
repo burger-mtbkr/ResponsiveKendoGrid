@@ -1,13 +1,19 @@
-/*
 Author: Lóan Burger - http://burger.kiwi
 Widget which can make a Kendo UI grid behave in a responsive manner.
 
-Usage:			$('#GridId').responsiveGrid({ columnsToShow: [], mobileWidth: 860, idColumn: 'Id', tools: ['excel'] });
-Option:			{	columnsToShow: [], // column property names of columns to display data for.					
-					mobileWidth: 860, // width in pixels below this will go to the responsive view
-					idColumn: '', // Primary key of the Grid model e.g. DeviceId, or UserId - whatever your using in the grid as the primary key
-					tools: [] // toolbar items e.g. Excel export ['excel']
-				},
+Usage:	$('#GridId').responsiveGrid(
+		{  columnsToShow: [], 
+		   mobileWidth: 860, 
+		   idColumn: 'Id',
+		   tools: ['excel'] 
+		});
+				
+				
+Option:	{	columnsToShow: [], // column property names of columns to display data for.					
+			mobileWidth: 860, // width in pixels below this will go to the responsive view
+			idColumn: '', // Primary key of the Grid model e.g. DeviceId, or UserId - whatever your using in the grid as the primary key
+			tools: [] // toolbar items e.g. Excel export ['excel']
+		},
 
 Limitations:	This will not allow grid row selection where the selection is managed by checkboxes.  You should use Kendo's build-in row selection behaviour.
 
